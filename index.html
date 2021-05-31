@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+
+<body>
+
+
+	<div class="container">
+		<form class="my-form">
+			<input type="hidden" name="form-name">
+			<div class="my-form__title">Свяжитесь с нами!</div>
+			<div class="my-form__fields">
+
+				<label class="form-field my-form__field">
+					<div class="form-label">Ваше имя </div>
+					<div class="form-input-cover">
+
+						<input type="text" class="form-input" name="name"  data-validate='required'>
+					</div>
+				</label>
+
+				<label class="form-field my-form__field">
+					<div class="form-label">Ваша фамилия</div>
+					<div class="form-input-cover">
+
+						<input type="text" class="form-input" name="sname"  data-validate='required'>
+					</div>
+				</label>
+
+				<label class="form-field my-form__field">
+					<div class="form-label">E-mail</div>
+					<div class="form-input-cover">
+
+						<input type="email" class="form-input" name="email"  data-validate='required is-email'>
+					</div>
+				</label>
+
+				<label class="form-field my-form__field">
+					<div class="form-label">Ваш телефон </div>
+					<div class="form-input-cover">
+						<input type="tel" class="form-input" placeholder="8 ( _  _  _ ) _  _  _   -  _  _   -   _  _" name="phone" data-validate='required is-phone'>
+					</div>
+				</label>
+
+				<label class="form-field my-form__field my-form__field--full">
+					<div class="form-label">Комментарий </div>
+					<div class="form-input-cover">
+						<textarea name="message" class="form-input"></textarea>
+
+					</div>
+				</label>
+
+			</div>
+			<button type="submit" class="my-form__btn btn btn--primary">Отправить</button>
+
+			<div id="result"></div>
+		</form>
+
+		
+	</div>
+
+
+
+	<script src="node_modules/validator/validator.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
